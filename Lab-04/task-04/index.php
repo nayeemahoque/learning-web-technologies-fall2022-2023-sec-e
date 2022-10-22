@@ -1,38 +1,38 @@
 <?php
 	$name = "";
-    $email = "";
-    $username = "";
-    $password = "";
-    $confirmPassword = "";
+	$email = "";
+	$username = "";
+	$password = "";
+	$confirmPassword = "";
 	$gender = "";
 	$dobDay = "";
-    $dobMonth = "";
-    $dobYear = "";
+	$dobMonth = "";
+	$dobYear = "";
 
 	if(isset($_GET['submit'])){
 		$name = $_GET['name'];
-        $email = $_GET['email'];
-        $username = $_GET['username'];
-        $password = $_GET['password'];
-        $confirmPassword = $_GET['confirmPassword'];
-        $gender = $_GET['gender'];
-        $dobDay = $_GET['dobDay'];
-        $dobMonth = $_GET['dobMonth'];
-        $dobYear = $_GET['dobYear'];
+		$email = $_GET['email'];
+		$username = $_GET['username'];
+		$password = $_GET['password'];
+		$confirmPassword = $_GET['confirmPassword'];
+		$gender = $_GET['gender'];
+		$dobDay = $_GET['dobDay'];
+		$dobMonth = $_GET['dobMonth'];
+		$dobYear = $_GET['dobYear'];
 
-        if($name == "" || $email == "" || $username == "" || $password == "" || $confirmPassword == "" || $gender == "") {
-            echo "All fields are required!";
-        } else if($password != $confirmPassword) {
-            echo "Password and Confirm Password do not match";
-        } else if($dobDay < 1 || $dobDay > 31) {
-            echo "Invalid DOB day!";
-        } else if($dobMonth < 1 || $dobMonth > 12) {
-            echo "Invalid DOB month";
-        } else if($dobYear > 2022) {
-            echo "Invalid DOB year!";
-        } else {
-            echo "Registration successful!";
-        }
+		if($name == "" || $email == "" || $username == "" || $password == "" || $confirmPassword == "" || $gender == "") {
+		    echo "All fields are required!";
+		} else if($password != $confirmPassword) {
+		    echo "Password and Confirm Password do not match";
+		} else if($dobDay < 1 || $dobDay > 31) {
+		    echo "Invalid DOB day!";
+		} else if($dobMonth < 1 || $dobMonth > 12) {
+		    echo "Invalid DOB month";
+		} else if($dobYear > 2022) {
+		    echo "Invalid DOB year!";
+		} else {
+		    echo "Registration successful!";
+		}
 	}
 ?>
 
