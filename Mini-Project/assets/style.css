@@ -1,0 +1,73 @@
+body { 
+    margin: 0;
+}
+
+.container-table{
+    background-color: #f6f6f5;
+    width: 100%;
+    height: 90%;
+    border: 1;
+    border-collapse: collapse;
+    animation-name: example;
+    animation-duration: 1s; 
+}
+
+.footer-bar{
+    background-color: #ecaad6;
+    width: 100%;
+    height: 10%;
+}
+
+.top-menu-item{
+    text-align: right;
+    padding: 12;
+}
+
+.menu-tile{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-picture{
+    height: 40%;
+    width: 60%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.W-15{
+    width: 15%;
+}
+
+  
